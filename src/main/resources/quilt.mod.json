@@ -1,0 +1,35 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "ho.artisan",
+		"id": "tfc",
+		"version": "${version}",
+		"metadata": {
+			"name": "TerraFirmaCraft Requilted",
+			"description": "A mod take the TFC to 1.19.3 quilt",
+			"contributors": {
+				"HO-Artisan": "Owner Team"
+			},
+			"icon": "assets/tfc/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "ho.artisan.tfc.TerraFirmaCraft"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.6-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=5.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.3"
+			}
+		]
+	},
+	"mixin": "tfc.mixins.json"
+}
